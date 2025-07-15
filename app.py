@@ -6,44 +6,30 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://i.ibb.co/9v4CWbz/chemistry-border-bg.jpg");
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                          url("https://static.vecteezy.com/system/resources/previews/001/987/697/non_2x/abstract-hexagon-pattern-dark-blue-background-medical-and-science-concept-molecular-structures-free-vector.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
-        color: black !important;
+        color: white;
     }
 
-    .stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp p, .stApp li, .stApp span, .stApp label, .stApp div {
-        color: black !important;
+    .stApp h1, .stApp h2, .stApp h3, .stApp h4 {
+        color: #ffffff;
     }
 
     [data-testid="stSidebar"] {
-        background: linear-gradient(135deg, #cceeff, #b3e0ff, #99ccff);
-        color: #003366;
-    }
-
-    [data-testid="stSidebar"] .stSelectbox label,
-    [data-testid="stSidebar"] .stSelectbox span {
-        color: #003366 !important;
-        font-weight: bold;
-    }
-
-    [data-testid="stSidebar"] .stSelectbox div[role="combobox"] {
-        background-color: #e6f7ff;
-        color: #003366;
-        border-radius: 5px;
-        border: 1px solid #66b3ff;
+        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+        color: black;
     }
 
     .stNumberInput > div > div {
-        border: 1px solid #99ccff;
+        border: 1px solid #ccc;
         border-radius: 5px;
-        color: black !important;
     }
 
     ul {
         margin-left: 20px;
-        color: black !important;
     }
     </style>
     """,
