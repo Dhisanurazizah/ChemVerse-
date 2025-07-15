@@ -7,12 +7,16 @@ st.markdown(
     <style>
     .stApp {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                          url("https://images.app.goo.gl/mXwNEXAhziXnGKzv5");
+                          url("https://i.imgur.com/abcd1234.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
         color: white;
     }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
     .stApp h1, .stApp h2, .stApp h3, .stApp h4 {
         color: #ffffff;
