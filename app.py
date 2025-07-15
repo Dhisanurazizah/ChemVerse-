@@ -18,28 +18,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-    .stApp h1, .stApp h2, .stApp h3, .stApp h4 {
-        color: #ffffff;
-    }
-
-    [data-testid="stSidebar"] {
-        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-        color: black;
-    }
-
-    .stNumberInput > div > div {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    ul {
-        margin-left: 20px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # ------------------ Judul Aplikasi ------------------
 st.title("🧪 ChemVerse (Kalkulator Kimia Digital)")
 
