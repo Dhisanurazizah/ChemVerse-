@@ -1,13 +1,13 @@
 import streamlit as st
 import math
 
-# ------------------ Gaya Visual (CSS) ------------------
+# ------------------ Styling CSS ------------------
 st.markdown(
     """
     <style>
     .stApp {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                          url("https://files.oaiusercontent.com/file-UNNKdxGxcja6bSmfvAruqE?se=2025-07-15T17%3A20%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&sig=link");
+                          url("https://static.vecteezy.com/system/resources/previews/001/987/697/non_2x/abstract-hexagon-pattern-dark-blue-background-medical-and-science-concept-molecular-structures-free-vector.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
