@@ -2,40 +2,29 @@ import streamlit as st
 import math
 
 # ------------------ Styling CSS ------------------
-st.markdown(
-    """
+import base64
+from pathlib import Path
+
+def get_base64_of_bin_file(bin_file_path):
+    with open(bin_file_path, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+def set_background(picture_path):
+    bin_str = get_base64_of_bin_file(picture_path)
+    background_style = f"""
     <style>
-    .stApp {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                          url("https://static.vecteezy.com/system/resources/previews/001/987/697/non_2x/abstract-hexagon-pattern-dark-blue-background-medical-and-science-concept-molecular-structures-free-vector.jpg");
+    .stApp {{
+        background-image: url("data:image/jpeg;base64,{bin_str}");
         background-size: cover;
-        background-attachment: fixed;
         background-position: center;
+        background-attachment: fixed;
         color: white;
-    }
-
-    .stApp h1, .stApp h2, .stApp h3, .stApp h4 {
-        color: #ffffff;
-    }
-
-    [data-testid="stSidebar"] {
-        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-        color: black;
-    }
-
-    .stNumberInput > div > div {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    ul {
-        margin-left: 20px;
-    }
+    }}
     </style>
-    """,
-    unsafe_allow_html=True
-)
-
+    """
+    st.markdown(background_style, unsafe_allow_html=True)
+    
 # ------------------ Judul Aplikasi ------------------
 st.title("🧪 ChemVerse (Kalkulator Kimia Digital)")
 
