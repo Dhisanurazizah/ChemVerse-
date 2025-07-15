@@ -7,11 +7,29 @@ st.markdown(
     <style>
     .stApp {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                          url("https://i.imgur.com/abcd1234.jpg");
+                          url("https://oaidalleapiprodscus.blob.core.windows.net/private/org-PoYIThb1KDjvZ35n0Y9y6OV8/user-0jmbjZhHi3JibRaXJlh7dYr3/img-YAQ4HkChQ3Z1MPZYAf0tXtLv.jpeg?st=2024-07-15T04%3A52%3A52Z&se=2024-07-15T06%3A52%3A52Z&sp=r&sv=2021-10-04&sr=b&sig=HTIUnqA7RQKvBS1q7aHFjLQar1mneJJjNMYuevMn93A%3D");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
         color: white;
+    }
+
+    .stApp h1, .stApp h2, .stApp h3, .stApp h4 {
+        color: #ffffff;
+    }
+
+    [data-testid="stSidebar"] {
+        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+        color: black;
+    }
+
+    .stNumberInput > div > div {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    ul {
+        margin-left: 20px;
     }
     </style>
     """,
@@ -133,14 +151,6 @@ elif menu == "Persentase Konsentrasi":
     if massa_zat > 0 and massa_larutan > 0:
         if massa_zat <= massa_larutan:
             persen = (massa_zat / massa_larutan) * 100
-            st.success(f"Persentase Konsentrasi = {persen:.2f}%")
-        else:
-            st.error("❌ Massa zat tidak boleh lebih besar dari massa larutan.")
+            st.success(f"Persentase Kons
 
-# ------------------ Footer ------------------
-st.markdown("---")
-st.markdown(
-    "<div style='text-align: center; color: white;'>© 2025 ChemVerse | Dibuat untuk Pembelajaran</div>",
-    unsafe_allow_html=True
-)
 
