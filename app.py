@@ -48,23 +48,21 @@ menu = st.sidebar.selectbox(
     "📘 Menu Navigasi",
     [
         "Beranda",
+        "Tentang Kami",
         "Tentang Aplikasi",
-        "Tujuan Aplikasi",
         "Hitung Mol",
         "Hitung pH",
         "Pengenceran Larutan",
-        "Persentase Konsentrasi",
-        "Tentang Kami"
+        "Persentase Konsentrasi"
     ],
     index=[
         "Beranda",
+        "Tentang Kami",
         "Tentang Aplikasi",
-        "Tujuan Aplikasi",
         "Hitung Mol",
         "Hitung pH",
         "Pengenceran Larutan",
-        "Persentase Konsentrasi",
-        "Tentang Kami"
+        "Persentase Konsentrasi"
     ].index(st.session_state.menu)
 )
 
@@ -86,6 +84,19 @@ if menu == "Beranda":
     if st.button("🚀 Lanjut ke Menu"):
         st.session_state.menu = "Tentang Kami"
         st.experimental_rerun()
+
+# ------------------ Tentang Kami ------------------
+elif menu == "Tentang Kami":
+    st.subheader("👥 Tentang Kami")
+    st.markdown("""
+    **TIM PENYUSUN**  
+    *Kelompok 3 - 1 D*  
+    1. Andrian Prayugo (2460324)  
+    2. Dhisa Nur Azizah (2460358)  
+    3. Marcelino David Mangatur (2460411)  
+    4. Nabil Syafiq Suhendar (2460446)  
+    5. Sefina Zahra Pangestika (2460515)
+    """)
 
 # ------------------ Tentang Aplikasi ------------------
 elif menu == "Tentang Aplikasi":
@@ -119,17 +130,6 @@ elif menu == "Tentang Aplikasi":
     2. Menurunkan tingkat kesalahan hitung manual.  
     3. Menghemat waktu dalam analisis kimia.  
     4. Mendorong adaptasi teknologi digital di dunia pendidikan dan industri kimia.
-    """)
-
-# ------------------ Tujuan Aplikasi ------------------
-elif menu == "Tujuan Aplikasi":
-    st.subheader("🎯 Tujuan Aplikasi")
-    st.markdown("""
-    Aplikasi ini dibuat untuk:
-    - Mempermudah proses perhitungan kimia dasar  
-    - Meningkatkan pemahaman konsep mol, pH, pengenceran, dan konsentrasi  
-    - Menghemat waktu dalam kegiatan laboratorium  
-    - Menyediakan alat bantu praktis dan responsif untuk pelajar dan mahasiswa
     """)
 
 # ------------------ Hitung Mol ------------------
@@ -174,19 +174,6 @@ elif menu == "Persentase Konsentrasi":
             st.success(f"Persentase Konsentrasi = {persen:.2f}%")
         else:
             st.error("❌ Massa zat tidak boleh lebih besar dari massa larutan.")
-
-# ------------------ Tentang Kami ------------------
-elif menu == "Tentang Kami":
-    st.subheader("👥 Tentang Kami")
-    st.markdown("""
-    **TIM PENYUSUN**  
-    *Kelompok 3 - 1 D*  
-    1. Andrian Prayugo (2460324)  
-    2. Dhisa Nur Azizah (2460358)  
-    3. Marcelino David Mangatur (2460411)  
-    4. Nabil Syafiq Suhendar (2460446)  
-    5. Sefina Zahra Pangestika (2460515)
-    """)
 
 # ------------------ Footer ------------------
 st.markdown("---")
