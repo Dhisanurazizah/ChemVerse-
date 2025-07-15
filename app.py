@@ -1,13 +1,13 @@
 import streamlit as st
 import math
 
-# ------------------ Styling CSS ------------------
+# ------------------ Gaya Visual (CSS) ------------------
 st.markdown(
     """
     <style>
     .stApp {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                          url("https://oaidalleapiprodscus.blob.core.windows.net/private/org-PoYIThb1KDjvZ35n0Y9y6OV8/user-0jmbjZhHi3JibRaXJlh7dYr3/img-YAQ4HkChQ3Z1MPZYAf0tXtLv.jpeg?st=2024-07-15T04%3A52%3A52Z&se=2024-07-15T06%3A52%3A52Z&sp=r&sv=2021-10-04&sr=b&sig=HTIUnqA7RQKvBS1q7aHFjLQar1mneJJjNMYuevMn93A%3D");
+                          url("https://files.oaiusercontent.com/file-UNNKdxGxcja6bSmfvAruqE?se=2025-07-15T17%3A20%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&sig=link");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
@@ -151,6 +151,13 @@ elif menu == "Persentase Konsentrasi":
     if massa_zat > 0 and massa_larutan > 0:
         if massa_zat <= massa_larutan:
             persen = (massa_zat / massa_larutan) * 100
-            st.success(f"Persentase Kons
+            st.success(f"Persentase Konsentrasi = {persen:.2f}%")
+        else:
+            st.error("❌ Massa zat tidak boleh lebih besar dari massa larutan.")
 
-
+# ------------------ Footer ------------------
+st.markdown("---")
+st.markdown(
+    "<div style='text-align: center; color: white;'>© 2025 ChemVerse | Dibuat untuk Pembelajaran</div>",
+    unsafe_allow_html=True
+)
