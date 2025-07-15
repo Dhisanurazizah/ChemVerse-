@@ -7,7 +7,7 @@ st.markdown(
     <style>
     .stApp {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                          url("https://static.vecteezy.com/system/resources/previews/001/987/697/non_2x/abstract-hexagon-pattern-dark-blue-background-medical-and-science-concept-molecular-structures-free-vector.jpg");
+                          url("https://images.app.goo.gl/mXwNEXAhziXnGKzv5");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
@@ -161,3 +161,4 @@ st.markdown(
     "<div style='text-align: center; color: white;'>© 2025 ChemVerse | Dibuat untuk Pembelajaran</div>",
     unsafe_allow_html=True
 )
+
