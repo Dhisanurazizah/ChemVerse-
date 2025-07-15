@@ -37,22 +37,45 @@ st.markdown(
 )
 
 # ------------------ Judul ------------------
-st.title("🧪 Kalkulator Kimia Interaktif")
+st.title("🧪 ChemVerse (Kalkulator Digital)")
 
-# ------------------ Menu di Sidebar ------------------
+# ------------------ Sidebar Navigasi ------------------
 menu = st.sidebar.selectbox(
     "📘 Menu Navigasi",
     [
+        "Beranda",
         "Tentang Aplikasi",
         "Tujuan Aplikasi",
         "Hitung Mol",
         "Hitung pH",
         "Pengenceran Larutan",
-        "Persentase Konsentrasi"
+        "Persentase Konsentrasi",
+        "Tentang Kami"
     ]
 )
 
-# ------------------ Tampilan Berdasarkan Menu ------------------
+# ------------------ Halaman Beranda ------------------
+if menu == "Beranda":
+    st.header("Selamat datang di ChemVerse - Aplikasi Kimia Pintar 🎉")
+    st.markdown("""
+    Bersama aplikasi ini, mari wujudkan perhitungan kimia yang cepat, cerdas, dan praktis.  
+    Saatnya mahasiswa bergerak lebih digital di era Revolusi 4.0!  
+    Aplikasi ini dirancang untuk mendukung aktivitas perkuliahan, praktikum, dan penelitian kimiamu dengan pendekatan teknologi yang efisien dan akurat.  
+    **ChemVerse** menggabungkan teknologi dan pendidikan untuk membawamu ke level baru dalam memahami dunia kimia.  
+    Yuk, manfaatkan ChemVerse sebagai sahabat belajar dan praktikummu.  
+    **Semua perhitungan kimia kini bisa kamu lakukan dalam satu aplikasi.**
+    """)
+    
+    if st.button("🚀 Lanjut ke Menu"):
+        st.session_state.menu = "Tentang Aplikasi"
+
+# ------------------ Navigasi Dinamis dengan Session State ------------------
+# Menetapkan ulang menu jika tombol ditekan di beranda
+if "menu" in st.session_state:
+    menu = st.session_state.menu
+    del st.session_state.menu  # reset supaya tidak menimpa navigasi setelahnya
+
+# ------------------ Konten Berdasarkan Menu ------------------
 if menu == "Tentang Aplikasi":
     st.subheader("📘 Tentang Aplikasi")
     st.markdown("""
@@ -114,9 +137,21 @@ elif menu == "Persentase Konsentrasi":
         else:
             st.error("❌ Massa zat tidak boleh lebih besar dari massa larutan.")
 
+elif menu == "Tentang Kami":
+    st.subheader("👥 Tentang Kami")
+    st.markdown("""
+    **TIM PENYUSUN**  
+    *Kelompok 3 - 1 D*  
+    1. Andrian Prayugo (2460324)  
+    2. Dhisa Nur Azizah (2460358)  
+    3. Marcelino David Mangatur (2460411)  
+    4. Nabil Syafiq Suhendar (2460446)  
+    5. Sefina Zahra Pangestika (2460515)
+    """)
+
 # ------------------ Footer ------------------
 st.markdown("---")
 st.markdown(
-    "<div style='text-align: center; color: white;'>© 2025 Kalkulator Kimia | Dibuat untuk Pembelajaran</div>",
+    "<div style='text-align: center; color: white;'>© 2025 ChemVerse | Dibuat untuk Pembelajaran</div>",
     unsafe_allow_html=True
 )
