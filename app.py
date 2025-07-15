@@ -37,7 +37,7 @@ st.markdown(
 )
 
 # ------------------ Judul ------------------
-st.title("🧪 ChemVerse (Kalkulator Digital)")
+st.title("🧪 ChemVerse (Kalkulator Kimia Digital)")
 
 # ------------------ Sidebar Navigasi ------------------
 menu = st.sidebar.selectbox(
@@ -67,7 +67,7 @@ if menu == "Beranda":
     """)
     
     if st.button("🚀 Lanjut ke Menu"):
-        st.session_state.menu = "Tentang Aplikasi"
+        st.session_state.menu = "Tentang Kami 👥"
 
 # ------------------ Navigasi Dinamis dengan Session State ------------------
 # Menetapkan ulang menu jika tombol ditekan di beranda
@@ -79,23 +79,40 @@ if "menu" in st.session_state:
 if menu == "Tentang Aplikasi":
     st.subheader("📘 Tentang Aplikasi")
     st.markdown("""
-    Aplikasi ini membantu siswa dan mahasiswa dalam melakukan perhitungan kimia dasar secara cepat dan interaktif.
+    🧪 ChemVerse
+*“Your Chemistry Universe in One App”*
+
+*📌 Deskripsi Singkat*
+ChemVerse adalah aplikasi kalkulator kimia digital yang interaktif, inovatif, dan cerdas. Dirancang untuk mempermudah perhitungan kimia sekaligus menjadi ruang eksplorasi konsep kimia dalam satu ekosistem terintegrasi.
+
+*🔍 Latar Belakang*
+Di era Revolusi Industri 4.0, integrasi teknologi dalam pendidikan dan industri kimia menjadi sebuah keharusan. ChemVerse hadir untuk menjawab tantangan tersebut dengan menghadirkan solusi perhitungan kimia yang cepat, akurat, dan berbasis teknologi digital. 
+
+*🎯 Tujuan Aplikasi*
+Aplikasi ini dibuat untuk :
+1. Mempermudah proses perhitungan kimia dasar.
+2. Meningkatkan pemahaman konsep mol, pH, pengenceran, dan konsentrasi.
+3. Menghemat waktu dalam kegiatan laboratorium.
+4. Menyediakan alat bantu praktis dan responsif untuk pelajar dan mahasiswa.
+5. Untuk mendukung pelajar, mahasiswa, dosen, dan profesional industri dalam memahami dan mengaplikasikan konsep kimia secara efisien dan intuitif.
+
+*⚙️ Fitur Unggulan ChemVerse*
+1. Perhitungan Molaritas
+2. Perhitungan pH
+3. Pengenceran Larutan
+4. Perhitungan Persentase Konsentrasi 
+
+*🎯 Manfaat Aplikasi*
+1. Membantu proses belajar dan praktikum secara mandiri maupun kelompok.
+2. Menurunkan tingkat kesalahan hitung manual, sehingga hasil perhitungan yang didapat akurat.
+3. Menghemat waktu dalam analisis kimia.
+4. Mendorong adaptasi teknologi digital di dunia pendidikan dan industri kimia.
 
     **Materi yang Dihitung:**
     - **Mol:** Menghitung jumlah mol berdasarkan massa dan Mr  
     - **pH:** Menghitung tingkat keasaman larutan dari [H⁺]  
     - **Pengenceran Larutan:** Menggunakan rumus M₁V₁ = M₂V₂  
     - **Persentase Konsentrasi:** Menghitung kadar zat terlarut dalam larutan
-    """)
-
-elif menu == "Tujuan Aplikasi":
-    st.subheader("🎯 Tujuan Aplikasi")
-    st.markdown("""
-    Aplikasi ini dibuat untuk:
-    - Mempermudah proses perhitungan kimia dasar  
-    - Meningkatkan pemahaman konsep mol, pH, pengenceran, dan konsentrasi  
-    - Menghemat waktu dalam kegiatan laboratorium  
-    - Menyediakan alat bantu praktis dan responsif untuk pelajar dan mahasiswa
     """)
 
 elif menu == "Hitung Mol":
@@ -147,7 +164,7 @@ elif menu == "Tentang Kami":
     3. Marcelino David Mangatur (2460411)  
     4. Nabil Syafiq Suhendar (2460446)  
     5. Sefina Zahra Pangestika (2460515)
-    """)
+    "")
 
 # ------------------ Footer ------------------
 st.markdown("---")
