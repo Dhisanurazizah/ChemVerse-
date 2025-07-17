@@ -18,9 +18,17 @@ st.markdown(
         color: #ffffff;
     }
 
+    /* Sidebar background and text color */
     [data-testid="stSidebar"] {
-        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+        background-color: gold;
         color: black;
+    }
+
+    /* Sidebar selectbox label & item text */
+    [data-testid="stSidebar"] .css-1cpxqw2,  /* label */
+    [data-testid="stSidebar"] .css-1d391kg {  /* menu item */
+        color: black !important;
+        font-weight: bold;
     }
 
     .stNumberInput > div > div {
