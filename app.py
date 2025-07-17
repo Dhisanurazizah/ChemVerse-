@@ -55,6 +55,7 @@ menu = st.sidebar.selectbox(
 
 # ------------------ Halaman Beranda ------------------
 if menu == "Beranda":
+    st.image("https://img.freepik.com/vektor-gratis/latar-belakang-kimia-digambar-tangan_23-2148164901.jpg", use_column_width=True)
     st.header("Selamat datang di ChemVerse - Aplikasi Kimia Pintar 🎉")
     st.markdown("""
     Bersama aplikasi ini, mari wujudkan perhitungan kimia yang cepat, cerdas, dan praktis.  
