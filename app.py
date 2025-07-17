@@ -141,7 +141,7 @@ elif menu == "Tentang Aplikasi":
     Di era Revolusi Industri 4.0, integrasi teknologi dalam pendidikan dan industri kimia menjadi sebuah keharusan. ChemVerse hadir untuk menjawab tantangan tersebut dengan menghadirkan solusi perhitungan kimia yang cepat, akurat, dan berbasis teknologi digital. 
 
     **🎯 Tujuan Aplikasi**  
-    Aplikasi ini dibuat untuk:
+    Aplikasi ini dibuat untuk :
     1. Mempermudah proses perhitungan kimia dasar.
     2. Meningkatkan pemahaman konsep mol, pH, pengenceran, dan konsentrasi.
     3. Menghemat waktu dalam kegiatan laboratorium.
