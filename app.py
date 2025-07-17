@@ -2,6 +2,7 @@ import streamlit as st
 import math
 
 # ------------------ Styling CSS ------------------
+# ------------------ Styling CSS ------------------
 st.markdown(
     """
     <style>
@@ -18,10 +19,30 @@ st.markdown(
         color: #ffffff;
     }
 
-    /* Sidebar background and text color */
+    /* Sidebar background image and text style */
     [data-testid="stSidebar"] {
-        background-color: gold;
+        background-image: url("https://png.pngtree.com/element_our/20200610/ourmid/pngtree-chemical-icon-image_2249324.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         color: black;
+    }
+
+    /* Optional: add overlay to improve text contrast */
+    [data-testid="stSidebar"]::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(255, 215, 0, 0.6);  /* semi-transparent gold overlay */
+        z-index: 0;
+    }
+
+    /* Ensure sidebar content appears above overlay */
+    [data-testid="stSidebar"] > div:first-child {
+        position: relative;
+        z-index: 1;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
     }
 
     /* Sidebar selectbox label & item text */
@@ -29,6 +50,7 @@ st.markdown(
     [data-testid="stSidebar"] .css-1d391kg {  /* menu item */
         color: black !important;
         font-weight: bold;
+        font-family: "Times New Roman", Times, serif !important;
     }
 
     .stNumberInput > div > div {
