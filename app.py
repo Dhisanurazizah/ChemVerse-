@@ -46,6 +46,25 @@ st.markdown(
 
 # ------------------ Judul Aplikasi ------------------
 st.title("🧪 ChemVerse (Kalkulator Kimia Digital)")
+st.markdown(
+    """
+    <style>
+    /* Import font dari Google Fonts */
+   https://www.creativefabrica.com/wp-content/uploads/2023/03/19/Aesthetic-Fonts-64760718-1.jpg
+
+    /* Ganti style judul aplikasi */
+    .judul-aesthetic {
+        font-family: 'Pacifico', cursive;
+        font-size: 48px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # ------------------ Sidebar Navigasi ------------------
 menu = st.sidebar.selectbox(
