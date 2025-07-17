@@ -2,6 +2,27 @@ import streamlit as st
 import math
 
 # ------------------ Styling CSS ------------------
+/* Warna latar dan teks pada navigasi selectbox sidebar */
+[data-testid="stSidebar"] .stSelectbox {
+    background-color: rgba(148, 0, 211, 0.8); /* violet */
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+[data-testid="stSidebar"] .stSelectbox label {
+    color: black !important;
+    font-weight: bold;
+}
+
+[data-testid="stSidebar"] .css-1d391kg { /* item menu */
+    background-color: rgba(148, 0, 211, 0.6); /* violet */
+    color: white !important;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
 # ------------------ Styling CSS ------------------
 st.markdown(
     """
