@@ -60,7 +60,8 @@ menu = st.sidebar.selectbox("📘 Menu Navigasi", [
     "🧪 Hitung Mol",
     "🧫 Hitung pH",
     "💧 Pengenceran Larutan",
-    "📊 Persentase Konsentrasi"
+    "📊 Persentase Konsentrasi",
+    "🧠 Kuis Kimia"
 ])
 
 # ------------------ Halaman Beranda ------------------
